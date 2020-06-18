@@ -2,6 +2,6 @@ package com.alex;
 
 public class TestModule {
     public void getPrint(){
-        System.out.println("Hello world Alex");
+        System.out.println("Hello world Alex H");
     }
 }
