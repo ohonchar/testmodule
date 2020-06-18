@@ -1,2 +1,9 @@
 rootProject.name = 'testmodule'
 
+File exRepositories = file('ex-plugins/')
+if (exRepositories.exists()){
+    exRepositories.list().each {
+        include(it)
+        project(":${it}").projectDir = file("ex-plugins/${it}")
+    }
+}
